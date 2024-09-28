@@ -240,8 +240,8 @@ std::stringstream assemble(std::istream& fd) {
                         // Convert back to UTF16
                         current.decoded_stringv5 = cp_to_utf16(CP_UTF8, arg[ARGUMENT_TYPE::STR]);
                     } else {
-                        // Convert back to CP932
-                        current.decoded_stringv4 = utf16_to_cp(CP_932, cp_to_utf16(CP_UTF8, arg[ARGUMENT_TYPE::STR]));
+                        // Convert back to CP936
+                        current.decoded_stringv4 = utf16_to_cp(CP_936, cp_to_utf16(CP_UTF8, arg[ARGUMENT_TYPE::STR]));
                     }
 
                     string_arguments.push_back(current_index);

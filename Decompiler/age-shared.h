@@ -12,6 +12,7 @@
 #define CP_UTF8 65001
 #define CP_UTF16 1200
 #define CP_932 932
+#define CP_936 936
 std::wstring cp_to_utf16(u32 code_page, const std::string& input);
 std::string utf16_to_cp(u32 code_page, const std::wstring& input);
 
